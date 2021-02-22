@@ -1,4 +1,6 @@
-package week3;
+package library;
+
+import week3.Address;
 
 public class TestLibrary {
 

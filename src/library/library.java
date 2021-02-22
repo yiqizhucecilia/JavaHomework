@@ -1,6 +1,8 @@
-package week3;
+package library;
 
 import java.util.ArrayList;
+
+import week3.Address;
 
 
 public class library {
@@ -27,8 +29,7 @@ public class library {
 
 	@Override
 	public String toString() {
-		return "library [book=" + book + ", address=" + address + ", books=" + books + ", bookname=" + bookname
-				+ ", count=" + count + "]";
+		return "library [book=" + book + ", address=" + address + ", books=" + books + ", count=" + count + "]";
 	}
 	 
 }
