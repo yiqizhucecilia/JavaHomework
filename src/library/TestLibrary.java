@@ -1,5 +1,7 @@
 package library;
 
+import java.util.Stack;
+
 import week3.Address;
 
 public class TestLibrary {
@@ -10,13 +12,27 @@ public class TestLibrary {
 		Address libraryAddress= new Address("2nd street", "St.Louis","MO", 63114);
 		
 		Book book1=new Book("JK Rowling",123456,"Harry Potter",100);
+		Book book2=new Book("Game of Thrones",123456,"Harry Potter",100);
 		
-		library libaray1=new library(book1,libraryAddress);
+		Library library1 = new Library("St. Louis Public Library", libraryAddress);
 		
-		Customer customer1=new Customer("Amy","Brown",customerAddress1);
+		String name;
 		
-		System.out.println(customer1);
-		System.out.println(libaray1);
+		Stack<Integer> stack = new Stack<>();
+	
+		
+		library1.addBook(book1);
+		library1.addBook(book2);
+		
+		int count = library1.getBooks().size();
+		
+		System.out.println(library1.getBooks().get(0).gettitle());
+
+		
+		//Customer customer1=new Customer("Amy","Brown",customerAddress1);
+		
+		//System.out.println(customer1);
+		//System.out.println(libaray1);
 		
 	}
 
