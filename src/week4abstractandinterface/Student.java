@@ -1,10 +1,19 @@
 package week4abstractandinterface;
 
 public class Student extends Person implements Bills{
+	
+	public Student(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
 
+
+	double taxes;
+	
 	@Override
 	public double taxes(double amount) {
-		return amount*0.02;
+		 taxes=amount*0.02;
+		 return taxes;
 	}
 
 	
@@ -23,11 +32,9 @@ public class Student extends Person implements Bills{
 
 	@Override
 	public String toString() {
-		return "Student [amount=" + amount + "]";
+		return "Student [taxes=" + taxes + ", name=" + name + ", amount=" + amount + ", telebill=" + telebill + "]";
 	}
 
-	
-	
-	
+
 
 }

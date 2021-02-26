@@ -16,10 +16,6 @@ public class TestLibrary {
 		
 		Library library1 = new Library("St. Louis Public Library", libraryAddress);
 		
-		String name;
-		
-		Stack<Integer> stack = new Stack<>();
-	
 		
 		library1.addBook(book1);
 		library1.addBook(book2);
@@ -29,9 +25,10 @@ public class TestLibrary {
 		System.out.println(library1.getBooks().get(0).gettitle());
 
 		
-		//Customer customer1=new Customer("Amy","Brown",customerAddress1);
+		Customer customer1=new Customer("Amy","Brown",customerAddress1);
 		
-		//System.out.println(customer1);
+		
+		System.out.println(customer1);
 		//System.out.println(libaray1);
 		
 	}

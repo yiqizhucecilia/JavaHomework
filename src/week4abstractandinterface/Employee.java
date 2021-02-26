@@ -2,6 +2,11 @@ package week4abstractandinterface;
 
 public class Employee extends Person implements Bills{
 
+	public Employee(String name) {
+		super(name);
+		// TODO Auto-generated constructor stub
+	}
+
 	@Override
 	public double taxes(double amount) {
 		// TODO Auto-generated method stub
